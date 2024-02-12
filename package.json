@@ -1,0 +1,25 @@
+{
+  "name": "event-sourcing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && (concurrently --kill-others \"tsc -w\" \"tsc-alias -w\")",
+    "start": "nodemon"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@eventstore/db-client": "^6.1.0",
+    "@types/uuid": "^9.0.7",
+    "express": "^4.18.2",
+    "kafkajs": "^2.2.4",
+    "uuid": "^9.0.1"
+  }
+}
